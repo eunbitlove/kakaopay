@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hyj.hyjurl.Main">
+
+	<select id="getUrlList" parameterType="com.hyj.hyjurl.form.MainFrm" resultType="com.hyj.hyjurl.dto.MainDto">
+	
+		select * from urllist where ${s_col} = #{f_url}
+				
+	</select>
+	
+	<insert id="insertUrlList" parameterType="com.hyj.hyjurl.form.MainFrm" useGeneratedKeys="true" keyProperty="u_no">
+		<![CDATA[
+		insert 
+		into urllist
+		(
+			f_url
+		) 
+		VALUES 
+		(
+			#{f_url}
+		)
+		]]>
+		
+		<selectKey keyProperty="u_no" resultType="java.lang.Integer">
+        	SELECT LAST_INSERT_ID()
+   		</selectKey>
+	
+	</insert>
+	
+	<update id="updateUrlList" parameterType="com.hyj.hyjurl.form.MainFrm">
+	
+		update urllist
+		set s_url = concat('http://localhost:8080/',#{s_url})
+		where u_no = #{u_no}
+		
+	</update>
+	
+
+</mapper>
