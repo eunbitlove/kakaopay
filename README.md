@@ -17,11 +17,16 @@
   
 ## 4. 개발방향
   가. Java와 Spring framework를 사용한다.
+  
   나. DB를 사용한다. 
+  
   다. Shortening URL은 Base62로 Encode 한다.
+  
   라. 로직적인 분기문은 최대한 화면단에 구현한다.
   
 ## 5. 테이블 속성
   가) u_no : int 형, 유니크한 값
+  
   나) s_url : varchar 형, u_no의 값을 base62로 인코딩하고 http://localhost:8080/ 뒤에 붙여 저장
+  
   다) f_url : varchar 형, 원래 URL 저장 용
