@@ -15,7 +15,8 @@ public class MySQLConnectionTest {
 	protected final Logger logger = LoggerFactory.getLogger(this.getClass());
  
     static final String DRIVER = "com.mysql.cj.jdbc.Driver";
-    static final String URL = "jdbc:mysql://127.0.0.1:3306/eunbitlove?useSSL=false&serverTimezone=UTC";
+    static final String URL = "jdbc:mysql://localhost:3306/eunbitlove?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC";
+    
     static final String USERNAME = "root";
     static final String PASSWORD = "eunbitlove";
  
@@ -39,13 +40,13 @@ public class MySQLConnectionTest {
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
                 
-                String no = rs.getString("no");
+                String u_no = rs.getString("u_no");
                 String s_url = rs.getString("s_url");
                 String f_url = rs.getString("f_url");
  
-                logger.info("nonononono : {}", no);
-                logger.info("s_urls_urls_url: {}", s_url);
-                logger.info("f_urlf_urlf_url: {}", f_url);
+                logger.info("1111111111111111111 : {}", u_no);
+                logger.info("2222222222222222222: {}", s_url);
+                logger.info("3333333333333333333: {}", f_url);
                 logger.info("========================================");
             }
  
