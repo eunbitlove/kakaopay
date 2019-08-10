@@ -25,3 +25,7 @@
   - u_no : int(20), 유니크한 값  
   - s_url : varchar(20), u_no의 값을 base62로 인코딩하고 http://localhost:8080/ 뒤에 붙여 저장  
   - f_url : varchar(2083), 원래 URL 저장 용
+  
+## 6. 문제해결
+  - u_no, s_url, f_url을 한번에 모두 인서트 할 수 없다.  처리방법 : u_no, f_url을 먼저 인서트 후에 u_no값을 가져와서 치환 후 s_url에 업데이트
+  - 인서트 된 u_no를 어떻게 가져올 것인가?  처리방법 : 별도의 select 로직을 구현하지 않고 mybatis의 keyProperty 옵션 사용
