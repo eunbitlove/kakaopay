@@ -22,6 +22,6 @@
   - 로직적인 분기문은 최대한 화면단에 구현한다.
   
 ## 5. 테이블 속성
-  - u_no : int 형, 유니크한 값  
-  - s_url : varchar 형, u_no의 값을 base62로 인코딩하고 http://localhost:8080/ 뒤에 붙여 저장  
-  - f_url : varchar 형, 원래 URL 저장 용
+  - u_no : int(20), 유니크한 값  
+  - s_url : varchar(20), u_no의 값을 base62로 인코딩하고 http://localhost:8080/ 뒤에 붙여 저장  
+  - f_url : varchar(2083), 원래 URL 저장 용
