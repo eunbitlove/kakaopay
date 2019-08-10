@@ -27,13 +27,8 @@
   - 계정 : root / eunbitlove
   - 테이블명 : urllist
   - 스크립트
-  '''sql
-CREATE TABLE `urllist` (	
-  `u_no` int(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `s_url` varchar(40) DEFAULT '',
-  `f_url` varchar(2083) DEFAULT ''
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-  '''
+CREATE TABLE `urllist` (<br>
+  `u_no` int(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,<br>`s_url` varchar(40) DEFAULT '',<br>`f_url` varchar(2083) DEFAULT ''<br>) ENGINE=InnoDB DEFAULT CHARSET=utf8;
   
   
 ## 6. 문제해결
