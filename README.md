@@ -26,8 +26,7 @@
   - DB명 : eunbitlove
   - 계정 : root / eunbitlove
   - 테이블명 : urllist
-  - 스크립트
-CREATE TABLE `urllist` (<br>
+  - 스크립트<br>CREATE TABLE `urllist` (<br>
   `u_no` int(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,<br>`s_url` varchar(40) DEFAULT '',<br>`f_url` varchar(2083) DEFAULT ''<br>) ENGINE=InnoDB DEFAULT CHARSET=utf8;
   
   
