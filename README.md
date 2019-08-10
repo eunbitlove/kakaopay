@@ -16,13 +16,10 @@
   - apache, tomcat, java 1.8, spring 4.3.x, mybatis, maven, Mysql 8.0, Eclipse
   
 ## 4. 개발방향
-  가. Java와 Spring framework를 사용한다.
-  
-  나. DB를 사용한다. 
-  
-  다. Shortening URL은 Base62로 Encode 한다.
-  
-  라. 로직적인 분기문은 최대한 화면단에 구현한다.
+  - Java와 Spring framework를 사용한다.  
+  - DB를 사용한다.   
+  - Shortening URL은 Base62로 Encode 한다.  
+  - 로직적인 분기문은 최대한 화면단에 구현한다.
   
 ## 5. 테이블 속성
   가) u_no : int 형, 유니크한 값
