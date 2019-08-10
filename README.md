@@ -23,6 +23,7 @@
   - 로직적인 분기문은 최대한 화면단에 구현한다.
   
 ## 5. DB 설정
+  - IP:PORT : localhost:3306
   - DB명 : eunbitlove
   - 계정 : root / eunbitlove
   - 테이블명 : urllist
@@ -34,4 +35,7 @@
   - u_no, s_url, f_url을 한번에 모두 인서트 할 수 없다.<br>**처리방법 :** u_no, f_url을 먼저 인서트 후에 u_no값을 가져와서 치환 후 s_url에 업데이트
   - 인서트 된 u_no를 어떻게 가져올 것인가?<br>**처리방법 :** 별도의 select 로직을 구현하지 않고 mybatis의 keyProperty 옵션 사용
 
-7. 
+## 7. 실행방법
+  - hyjurl.war 파일을 톰캣의 webapps 경로로 이동
+  - 톰캣의 server.xml파일 <host></host> 속성 내부에 <Context docBase="hyjurl" path="/" reloadable="true" source="org.eclipse.jst.jee.server:hyjurl"/> 추가
+  - 톰캣 기동 후 웹브라우저에 http:localhost:8080/ 주소 입력
