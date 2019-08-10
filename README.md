@@ -36,6 +36,6 @@
   - 인서트 된 u_no를 어떻게 가져올 것인가?<br>**처리방법 :** 별도의 select 로직을 구현하지 않고 mybatis의 keyProperty 옵션 사용
 
 ## 7. 실행방법
-  - github의 hyjurl.war 파일을 다운받아 톰캣의 webapps 경로로 
+  - github의 hyjurl.war 파일을 다운받아 톰캣의 webapps 경로로 복사
   - 톰캣의 server.xml파일 < host > 속성 내부에 < Context docBase="hyjurl" path="/" reloadable="true" source="org.eclipse.jst.jee.server:hyjurl"/ > 추가
   - 톰캣 기동 후 웹브라우저에 http://localhost:8080/ 주소 입력
