@@ -27,7 +27,7 @@
   - 계정 : root / eunbitlove
   - 테이블명 : urllist
   - 스크립트
-  '''
+  '''sql
 CREATE TABLE `urllist` (	
   `u_no` int(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `s_url` varchar(40) DEFAULT '',
