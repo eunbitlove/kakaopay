@@ -37,5 +37,5 @@
 
 ## 7. 실행방법
   - hyjurl.war 파일을 톰캣의 webapps 경로로 이동
-  - 톰캣의 server.xml파일 '''html<host></host>''' 속성 내부에 '''html<Context docBase="hyjurl" path="/" reloadable="true" source="org.eclipse.jst.jee.server:hyjurl"/>''' 추가
+  - 톰캣의 server.xml파일 <host> 속성 내부에 <Context docBase="hyjurl" path="/" reloadable="true" source="org.eclipse.jst.jee.server:hyjurl"/> 추가
   - 톰캣 기동 후 웹브라우저에 http:localhost:8080/ 주소 입력
