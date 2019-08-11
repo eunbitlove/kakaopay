@@ -5,7 +5,7 @@
 
 	<select id="getUrlList" parameterType="com.hyj.hyjurl.form.MainFrm" resultType="com.hyj.hyjurl.dto.MainDto">
 	
-		select * from urllist where ${s_col} = #{f_url}
+		select * from urllist where ${s_col} = BINARY(#{f_url})
 				
 	</select>
 	

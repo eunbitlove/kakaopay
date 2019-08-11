@@ -81,6 +81,12 @@
 				//단축 URL로 검색했을때만 바로 redirect
 				if($("#s_col").val() == "s_url")
 				{
+					//http://없이 등록된 경우 붙여준다.
+					if(f_url.indexOf("http") != 0)
+					{
+						f_url = "http://"+f_url;
+					}
+					
 					window.location.href = f_url;
 				} else {
 					//이외의 경우는 바로 단축 url을 주소칸에 셋팅
